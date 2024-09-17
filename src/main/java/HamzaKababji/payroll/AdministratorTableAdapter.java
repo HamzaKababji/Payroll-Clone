@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AdministratorTableAdapter implements DataStore {
     private Connection connection;
-    private String DB_URL = "jdbc:derby:PayrollDB";
+    private String DB_URL = "jdbc:derby:PAYROLLDB";
 
     public AdministratorTableAdapter(Boolean reset) throws SQLException {
         connection = DriverManager.getConnection(DB_URL);

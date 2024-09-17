@@ -5,12 +5,13 @@
  */
 package HamzaKababji.payroll;
 
-import java.sql.Date;
 import javafx.beans.property.*;
+
+import java.sql.Date;
 
 /**
  *
- * @author Hamza Elkababji
+ * @author HamzaKababji
  */
 public class Employee extends PayrollUser {
     private final StringProperty city;

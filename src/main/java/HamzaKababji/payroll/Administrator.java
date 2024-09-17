@@ -1,6 +1,7 @@
 package HamzaKababji.payroll;
 
-import javafx.beans.property.*;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 
 import java.sql.Date;
 

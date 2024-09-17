@@ -1,6 +1,7 @@
 package HamzaKababji.payroll;
 
-import javafx.beans.property.*;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 public class UserAccount {
     private StringProperty userAccountName;

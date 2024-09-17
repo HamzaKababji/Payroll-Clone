@@ -10,12 +10,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Hamza Elkababji
+ * @author HamzaKababji
  */
 public class EmployeeTableAdapter implements DataStore {
 
     private Connection connection;
-    private String DB_URL = "jdbc:derby:PayrollDB";
+    private String DB_URL = "jdbc:derby:PAYROLLDB";
 
     public EmployeeTableAdapter(Boolean reset) throws SQLException {
         connection = DriverManager.getConnection(DB_URL);
@@ -133,7 +133,7 @@ public class EmployeeTableAdapter implements DataStore {
                 + "earningStatementType = '" + employee.getEarningStatementType() + "', "
                 + "exempt = " + (employee.getExempt()? 1 : 0) + ", "
 
-                + "userAccount = " + (employee.getUserAccount() == null? null : "'" + employee.getUserAccount().getUserAccountName() + "' ")
+                + "userAccount = " + (employee.getUserAccount().getUserAccountName() == null? null : "'" + employee.getUserAccount().getUserAccountName() + "' ")
 
                 + " WHERE id = "
                 + "'" + employee.getID() + "'";

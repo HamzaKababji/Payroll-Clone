@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 /**
  * FXML Controller class
  *
- * @author Hamza Elkababji
+ * @author HamzaKababji
  */
 public class AboutController {
 

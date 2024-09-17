@@ -1,13 +1,5 @@
 package HamzaKababji.payroll;
 
-import java.io.IOException;
-import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -21,10 +13,19 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+import java.net.URL;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
+
 
 /**
  *
- * @author Hamza Elkababji
+ * @author HamzaKababji
  */
 public class PayrollController implements Initializable {
     @FXML
@@ -152,7 +153,7 @@ public class PayrollController implements Initializable {
         Parent aUser = fxmlLoader.load();
         AddNewEmployeeProfileController addNewEmployeeProfileController = (AddNewEmployeeProfileController) fxmlLoader.getController();
         addNewEmployeeProfileController.setPayrollController(this);
-        addNewEmployeeProfileController.setDataStore(new UserAccountTableAdapter(false), new EmployeeTableAdapter(false));
+        addNewEmployeeProfileController.setDataStore(new UserAccountTableAdapter(false), new EmployeeTableAdapter(false), new EarningSourceTableAdapter(false),new DeductionSourceTableAdapter(false), new DeductionTableAdapter(false),new EarningTableAdapter(false));
         // create new stage
         Stage stage = new Stage();
         stage.setScene(new Scene(aUser));
@@ -169,7 +170,7 @@ public class PayrollController implements Initializable {
         Parent aUser = fxmlLoader.load();
         ModifyEmployeeProfileController modifyEmployeeProfileController = (ModifyEmployeeProfileController) fxmlLoader.getController();
         modifyEmployeeProfileController.setPayrollController(this);
-        modifyEmployeeProfileController.setDataStore(new UserAccountTableAdapter(false), new EmployeeTableAdapter(false));
+        modifyEmployeeProfileController.setDataStore(new UserAccountTableAdapter(false), new EmployeeTableAdapter(false), new EarningSourceTableAdapter(false),new DeductionSourceTableAdapter(false), new DeductionTableAdapter(false),new EarningTableAdapter(false));
         // create new stage
         Stage stage = new Stage();
         stage.setScene(new Scene(aUser));
@@ -304,16 +305,21 @@ public class PayrollController implements Initializable {
         ImageView face = new ImageView(new Image("file:src/main/resources/HamzaKababji/payroll/UserIcon.png",20,20,true,true));
         userMenuItem.setGraphic(face);
         disableMenuItems();
+        boolean reset = false;
 
         try {
             // Create a named constant for the URL
             // NOTE: This value is specific for Java DB
-            String DB_URL = "jdbc:derby:PayrollDB";
+            String DB_URL = "jdbc:derby:PAYROLLDB";
             // Create a connection to the database
             conn = DriverManager.getConnection(DB_URL);
 
             // Create the administrator data if it is not already in the database
             new AdministratorTableAdapter(false);
+           new EarningSourceTableAdapter(reset);
+          new DeductionSourceTableAdapter(reset);
+            new DeductionTableAdapter(reset);
+             new EarningTableAdapter(reset);
 
         } catch (SQLException ex) {
             displayAlert(ex.getMessage());

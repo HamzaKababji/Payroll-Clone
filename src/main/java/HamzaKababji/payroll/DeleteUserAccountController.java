@@ -27,7 +27,7 @@ public class DeleteUserAccountController implements Initializable {
     @FXML
     private ComboBox userName;
 
-    HamzaKababji.payroll.PayrollController PayrollController;
+    PayrollController payrollController;
 
     private DataStore userAccountTable;
     private DataStore employeeTable;
@@ -43,15 +43,15 @@ public class DeleteUserAccountController implements Initializable {
         buildData();
     }
 
-    public void setPayrollController(HamzaKababji.payroll.PayrollController controller) {
-        PayrollController = controller;
+    public void setPayrollController(PayrollController controller) {
+        payrollController = controller;
     }
 
     public void buildData() {
         try {
             usernamesList.addAll(userAccountTable.getKeys());
         } catch (SQLException ex) {
-            PayrollController.displayAlert("User Accounts List: " + ex.getMessage());
+            payrollController.displayAlert("User Accounts List: " + ex.getMessage());
         }
     }
 
@@ -68,7 +68,7 @@ public class DeleteUserAccountController implements Initializable {
             // Close stage
             stage.close();
         } catch (SQLException ex) {
-            PayrollController.displayAlert("Find User Account: " + ex.getMessage());
+            payrollController.displayAlert("Find User Account: " + ex.getMessage());
         }
 
 
@@ -84,7 +84,7 @@ public class DeleteUserAccountController implements Initializable {
             fullName.setText(employee.getFullName());
 
         } catch (SQLException ex) {
-            PayrollController.displayAlert("Find Profile: " + ex.getMessage());
+            payrollController.displayAlert("Find Profile: " + ex.getMessage());
         }
     }
 

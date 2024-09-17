@@ -6,7 +6,7 @@ import java.util.List;
 
 public class UserAccountTableAdapter implements DataStore {
     private Connection connection;
-    private String DB_URL = "jdbc:derby:PayrollDB";
+    private String DB_URL = "jdbc:derby:PAYROLLDB";
 
     public UserAccountTableAdapter(Boolean reset) throws SQLException {
         connection = DriverManager.getConnection(DB_URL);
