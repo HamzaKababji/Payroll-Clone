@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HamzaKababji.payroll.AddNewEmployeeProfileController">
+   <children>
+      <Label layoutX="61.0" layoutY="108.0" text="Employee ID" textAlignment="RIGHT" />
+      <TextField fx:id="id" layoutX="140.0" layoutY="104.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label layoutX="368.0" layoutY="108.0" text="Employee Name" />
+      <TextField fx:id="fullName" layoutX="467.0" layoutY="104.0" prefHeight="26.0" prefWidth="253.0" />
+      <TabPane fx:id="tb" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="760.0"
+       tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <tabs>
+          <Tab fx:id="personalDataTab" style="-fx-background-color: #ececec;" text="Personal Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="412.0" prefWidth="462.0" style="-fx-background-color: #dbdbdb;">
+                <children>
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="38.0" minWidth="80.0" text="Province" />
+                        <TextField fx:id="province" layoutX="160.0" layoutY="34.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="74.0" minWidth="80.0" text="City" />
+                        <TextField fx:id="city" layoutX="160.0" layoutY="70.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="111.0" minWidth="80.0" text="Phone" />
+                        <TextField fx:id="phone" layoutX="160.0" layoutY="107.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="146.0" minWidth="80.0" text="PostalCode" />
+                        <TextField fx:id="postalCode" layoutX="160.0" layoutY="144.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="189.0" minWidth="80.0" text="Martial Status" />
+                        <TextField fx:id="martialStatus" layoutX="160.0" layoutY="185.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="227.0" minWidth="80.0" text="Skill Code" />
+                        <TextField fx:id="skillCode" layoutX="160.0" layoutY="223.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="370.0" layoutY="38.0" minWidth="130.0" text="SIN" />
+                        <TextField fx:id="SIN" layoutX="510.0" layoutY="34.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="370.0" layoutY="74.0" minWidth="130.0" text="Job Name" />
+                        <TextField fx:id="jobName" layoutX="510.0" layoutY="70.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="370.0" layoutY="148.0" minWidth="130.0" text="Date of Birth" />
+                        <DatePicker fx:id="DOB" layoutX="510.0" layoutY="144.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="370.0" layoutY="189.0" minWidth="130.0" text="Date of Hire" />
+                        <DatePicker fx:id="DOH" layoutX="510.0" layoutY="185.0" minHeight="10.0" minWidth="150.0" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="370.0" layoutY="227.0" minWidth="130.0" text="Date of Last Promotion" />
+                        <DatePicker fx:id="DOLP" layoutX="510.0" layoutY="223.0" minHeight="10.0" minWidth="150.0" />
+
+                </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="earningsDataTab" text="Earnings Data">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                  <Label fx:id="earningTabLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="92.0" prefHeight="100.0" prefWidth="450.0" text="To be completed in assignment 4" textFill="#fa0404" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="deductionsDataTab" text="Deductions Data">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <children>
+                        <Label fx:id="deductionTabLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="92.0" prefHeight="100.0" prefWidth="450.0" text="To be completed in assignment 4" textFill="#fa0404" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="323.0" layoutY="33.0" text="Add New Employee Profile" textFill="#080000" AnchorPane.topAnchor="33.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelBtn" layoutX="594.0" layoutY="498.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" AnchorPane.bottomAnchor="26.4" AnchorPane.rightAnchor="154.8" />
+      <Button fx:id="saveBtn" layoutX="680.0" layoutY="498.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="53.0" text="Save" AnchorPane.bottomAnchor="26.4" AnchorPane.rightAnchor="60.0" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

@@ -3,13 +3,13 @@
     <CLASSES />
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.base" />
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.controls" />
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.fxml" />
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.graphics" />
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.media" />
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.swing" />
-      <root url="jar://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/JavaFX-SDK/src.zip!/javafx.web" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.base" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.controls" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.fxml" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.graphics" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.media" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.swing" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/JavaFX-SDK/src.zip!/javafx.web" />
     </SOURCES>
   </library>
 </component>

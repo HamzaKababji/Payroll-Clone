@@ -1,10 +1,21 @@
 <component name="libraryTable">
   <library name="lib">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" />
+    </ANNOTATIONS>
     <CLASSES>
-      <root url="file://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/Projects/Derby/lib" />
+      <root url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-    <jarDirectory url="file://$USER_HOME$/OneDrive - The University of Western Ontario/Studying/University/Second Year/SE 2203B/Projects/Derby/lib" recursive="false" />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" />
+    </SOURCES>
+    <jarDirectory url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" recursive="false" />
+    <jarDirectory url="jar://$PROJECT_DIR$/../Libraries/DatabaseLibraries/lib.zip!/" recursive="false" type="SOURCES" />
   </library>
 </component>

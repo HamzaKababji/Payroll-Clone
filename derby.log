@@ -1,10 +1,13 @@
 ----------------------------------------------------------------
-Mon Sep 16 19:41:12 EDT 2024D001 : [0] The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217), [1] a816c00e-0191-fd36-2ed2-00000e04e900, [2] C:\Users\hamza\Desktop\iPAYROLL\iPAYROLL\iPAYROLLDB, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@4fca772d, [4] file:/C:/Users/hamza/OneDrive%20-%20The%20University%20of%20Western%20Ontario/Studying/University/Second%20Year/SE%202203B/Projects/Derby/lib/derby.jar
+Tue Sep 17 07:25:29 EDT 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.17.1.0 - (1913217): instance a816c00e-0191-ffba-f901-00000d748548 
+on database directory C:\Users\hamza\OneDrive - The University of Western Ontario\Personal\Projects\Payroll\Payroll\PayrollDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@25f38edc 
+Loaded from file:/C:/Users/hamza/OneDrive%20-%20The%20University%20of%20Western%20Ontario/Personal/Projects/Payroll/Libraries/Derby/lib/derby.jar
 java.vendor=Oracle Corporation
 java.runtime.version=22.0.2+9-70
-user.dir=C:\Users\hamza\Desktop\iPAYROLL\iPAYROLL
+user.dir=C:\Users\hamza\OneDrive - The University of Western Ontario\Personal\Projects\Payroll\Payroll
 os.name=Windows 11
 os.arch=amd64
 os.version=10.0
 derby.system.home=null
-C005 : [0] 
+Database Class Loader started - derby.database.classpath=''
